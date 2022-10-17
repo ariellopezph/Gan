@@ -1,0 +1,311 @@
+body {
+    background-color: #000;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+    overflow-x: hidden;
+
+}
+
+
+
+/*///////////////////// LOGO /////////////////////////////*/
+
+#logo {
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-weight: 300;
+    
+    
+}
+
+/*///////////////////// HEADER //////////////////////////*/
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    overflow: hidden;
+}
+
+
+#inicio {
+    overflow: hidden;
+}
+
+#welcome > h1 > span {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    /* color: red; */
+    font-weight: bold;
+}
+
+#welcome > h1 {
+    letter-spacing: 4px;
+
+}
+
+#welcome > h2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: medium;
+}
+
+/*////////////////////// NAVBAR ////////////////////////*/
+
+#navbar {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    
+    
+    
+}
+
+
+
+.nav-item a:hover {
+    color: rgb(168, 43, 43) !important;
+}
+
+.nav-link > .active {
+    color: red;
+}
+
+.nav-link[aria-current="page"] {
+    color: rgb(168, 43, 43) !important;
+}
+
+/*////////////////////// BANNER ////////////////////////*/
+
+.banner {
+    position: relative;
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+  ), url(./img/1463-2.jpg);
+    
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+#intro {
+    flex-direction: column;
+}
+
+.desc > h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 300;    
+    padding: 20px;
+    font-size: 80px;
+    /* border: 2px solid white; */
+    
+}
+
+.desc > p {
+    letter-spacing: 2px;
+
+}
+
+#title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+}
+
+
+/*//////////////////// BANNER-IMG //////////////////////*/
+
+
+.img {
+    
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+}
+
+.img :hover {
+    width: 405px;    
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+
+/* ABOUT */
+
+#about {
+    color: #fff;
+    overflow: hidden;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+  ),  url(img/about-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+.about #fotito img {
+    max-width: 100%;
+    border: 4px solid rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    #fotito {
+        display: flex;
+      justify-content: center;
+    }
+
+}
+
+/* Horarios */
+
+#horarios {
+    color: #fff;
+    overflow: hidden;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+  ),  url(img/horarios-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+/* CAMBIOS */
+
+.cambios {
+    overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+    .hidden {
+        visibility: hidden;
+        
+    }
+    #title {
+        font-size: 20px;
+        
+    }
+    .cambios {
+        height: 80vh;
+    }
+   
+
+}
+
+@media (max-width: 840px) {
+    .cambios {
+        height: 130vh;
+    }
+}
+
+/* UBICACION */
+
+#ubication {
+    padding-top: 50px;
+    color: #fff;
+    overflow: hidden;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+  ),  url(img/maps-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 80vh;
+    
+}
+
+
+
+/* PAGOS */
+
+.pagos {
+    background-color: white;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.envio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja {
+    margin: 40px;
+    
+
+}
+
+@media (max-width: 1024px) {
+    #pagos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 110vh;
+    }
+    .caja {
+        max-width: 75vh;
+    }
+
+}
+
+/* UBICACION */
+
+#ubication {
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+#footer {
+    overflow: hidden;
+}
+
+#fotito {
+    width: auto;
+}
+
+.section-title > h2 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section-title > p {
+    letter-spacing: 5px;
+}
